@@ -14,3 +14,21 @@ CREATE TABLE IF NOT EXISTS StudentCourses (
     FOREIGN KEY(StudentID) 
       REFERENCES Students(StudentID)
 );
+
+-- Creation of customers table
+CREATE TABLE IF NOT EXISTS CUSTOMERS (
+   ID INT NOT NULL,
+   NAME VARCHAR (20) NOT NULL,
+   AGE INT NOT NULL,
+   ADDRESS CHAR (25),
+   SALARY DECIMAL (18, 2),       
+   PRIMARY KEY (ID)
+);
+
+-- Creation of orders table
+CREATE TABLE IF NOT EXISTS ORDERS (
+   OID INT NOT NULL,
+   DATE VARCHAR (20) NOT NULL,
+   CUSTOMER_ID INT NOT NULL,
+   AMOUNT DECIMAL (18, 2)
+);

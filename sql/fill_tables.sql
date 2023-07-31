@@ -1,13 +1,47 @@
 -- Filling Students
-INSERT INTO Students
-VALUES  (1, 'Pepe'),
-        (2, 'Juan'),
-        (3, 'Maria');
+-- INSERT INTO Students
+-- VALUES  (1, 'Pepe'),
+--         (2, 'Juan'),
+--         (3, 'Maria');
 
 -- Filling StudentCourses
-INSERT INTO StudentCourses
-VALUES  (1, 1),
-        (3, 2),
-        (2, 1),
-        (3, 1),
-        (4, 4);
+-- INSERT INTO StudentCourses
+-- VALUES  (1, 1),
+--         (2, 1),
+--         (3, 2),
+--         (4, 4);
+
+-- Filling Customers
+INSERT INTO CUSTOMERS (ID,NAME,AGE,ADDRESS,SALARY)
+VALUES (1, 'Ramesh', 32, 'Ahmedabad', 2000.00 );
+
+INSERT INTO CUSTOMERS (ID,NAME,AGE,ADDRESS,SALARY)
+VALUES (2, 'Khilan', 25, 'Delhi', 1500.00 );
+
+INSERT INTO CUSTOMERS (ID,NAME,AGE,ADDRESS,SALARY)
+VALUES (3, 'kaushik', 23, 'Kota', 2000.00 );
+
+INSERT INTO CUSTOMERS (ID,NAME,AGE,ADDRESS,SALARY)
+VALUES (4, 'Chaitali', 25, 'Mumbai', 6500.00 );
+
+INSERT INTO CUSTOMERS (ID,NAME,AGE,ADDRESS,SALARY)
+VALUES (5, 'Hardik', 27, 'Bhopal', 8500.00 );
+
+INSERT INTO CUSTOMERS (ID,NAME,AGE,ADDRESS,SALARY)
+VALUES (6, 'Komal', 22, 'MP', 4500.00 );
+
+INSERT INTO CUSTOMERS (ID,NAME,AGE,ADDRESS,SALARY)
+VALUES (7, 'Muffy', 24, 'Indore', 10000.00 );
+
+-- Filling orders
+INSERT INTO ORDERS (OID, DATE, CUSTOMER_ID, AMOUNT)
+VALUES (102, '2009-10-08 00:00:00', 3, 3000.00);
+
+INSERT INTO ORDERS (OID, DATE, CUSTOMER_ID, AMOUNT)
+VALUES (100, '2009-10-08 00:00:00', 3, 1500.00);
+
+INSERT INTO ORDERS (OID, DATE, CUSTOMER_ID, AMOUNT)
+VALUES (101, '2009-11-20 00:00:00', 2, 1560.00);
+
+INSERT INTO ORDERS (OID, DATE, CUSTOMER_ID, AMOUNT)
+VALUES (103, '2008-05-20 00:00:00', 4, 2060.00);
